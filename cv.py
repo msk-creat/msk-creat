@@ -4,7 +4,7 @@ from pyzbar.pyzbar import decode
 
 
 def Change_To_codes(image_path):
-    image=cv2.imread(image_path)
+    image=cv2.imread(image_path) 
     decoded_objects=decode(image)
     for obj in decoded_objects:
         Qr_data=obj.data.decode('utf-8')
